@@ -41,6 +41,24 @@ alpm
       pkg:alpm/arch/python-pip@21.0-1?arch=any
       pkg:alpm/arch/containers-common@1:0.47.4-4?arch=x86_64
 
+alpm
+----
+``alpm`` for Arch Linux and other users of the libalpm/pacman package manager.
+
+- There is no default package repository: this should be implied either from
+  the ``distro`` qualifiers key  or using a repository base url as
+  ``repository_url`` qualifiers key.
+- The ``namespace`` is the vendor such as ``arch``, ``arch32``, ``archarm``,
+  ``manjaro`` or ``msys``. It is not case sensitive and must be lowercased.
+- The ``name`` is the package name. It is not case sensitive and must be lowercased.
+- The ``version`` is the version of the package as specified in [`vercmp(8)`](https://man.archlinux.org/man/vercmp.8#DESCRIPTION) as part of alpm.
+- The ``arch`` is the qualifiers key for a package architecture.
+- Examples::
+
+      pkg:alpm/arch/pacman@6.0.1-1?arch=x86_64
+      pkg:alpm/arch/python-pip@21.0-1?arch=any
+      pkg:alpm/arch/containers-common@1:0.47.4-4?arch=x86_64
+
 
 bitbucket
 ---------
